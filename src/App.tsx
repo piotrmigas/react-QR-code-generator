@@ -60,14 +60,16 @@ function App() {
     }[size]);
 
   return (
-    <div className='flex flex-col max-w-lg mx-auto my-10 gap-10'>
+    <div className='flex flex-col max-w-lg mx-auto my-10 gap-10 px-8'>
       <form onSubmit={handleSubmit}>
+        <h2 className='text-base font-semibold leading-7 text-gray-900'>Url</h2>
         <input
           placeholder='Enter a URL'
           className='w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5'
           required
           onChange={handleChange}
         />
+        <h2 className='text-base font-semibold leading-7 text-gray-900'>Size</h2>
         <select
           className='w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none'
           onChange={(e) => {
